@@ -1,0 +1,34 @@
+#rock {
+    background-color: red;
+    color: white
+}
+#paper {
+    background-color: blue;
+    color: white
+}
+#scissors {
+    background-color: green;
+    color: white
+}
+button {
+    width: 100px;
+    height: 50px;
+}
+.text {
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+
+#rock:hover {
+    background-color: lightcoral;
+    color: black
+}
+#paper:hover {
+    background-color: lightblue;
+    color: black
+}
+#scissors:hover {
+    background-color: lightgreen;
+    color: black
+}
