@@ -15,12 +15,23 @@
         <button id="scissors" onMouseDown="playerPick('Scissors')">
             Scissors
         </button>
-        <p class="text">
+        <button id="reset" onMouseDown="localStorage.removeItem('score');
+         document.getElementById('msgDisplay').innerText = '';
+         document.getElementById('compDisplay').innerText = '';
+         document.getElementById('result').innerText = '';
+         document.getElementById('scoreDisplay').innerText = '';">
+            Reset
+        </button>
+        <p class="text" id="welcome">Welcome </p>
+        <p class="text" id="msgDisplay">
             Let's play a game! 
         </p>
-        <p class="text" id="msgDisplay"></p>
+        <p class="resultdisp">
+           
+        </p>
         <p class="text" id="compDisplay"></p>
         <p class="text" id="result"></p>
+        <p class="text" id="scoreDisplay"></p>
 
         <script src="code.js"></script>
     </body>
