@@ -13,22 +13,26 @@
 button {
     width: 100px;
     height: 50px;
+    border-radius: 100px;
 }
 .text {
     font-weight: bold;
     font-size:xx-large;
 }
-
-
-#rock:hover {
-    background-color: lightcoral;
-    color: black
+button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    animation: rotateAnimation 2s; /* Adjust duration and iteration count as needed */
 }
-#paper:hover {
-    background-color: lightblue;
-    color: black
-}
-#scissors:hover {
-    background-color: lightgreen;
-    color: black
+
+@keyframes rotateAnimation {
+    0% {
+        transform: scale(1.1);rotate(0deg);
+    }
+    20% {
+        transform: scale(1.0);rotate(-20deg); /* Rotate to 0 degrees at halfway point */
+    }
+    100% {
+        transform: scale(0.9);rotate(-20deg); /* Rotate to 20 degrees at the end */
+    }
 }
